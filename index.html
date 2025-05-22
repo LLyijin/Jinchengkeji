@@ -14,14 +14,17 @@
     const correct = "123456";  // 设置你的密码
     if (password !== correct) {
       alert("密码错误，无法访问！");
-      document.body.innerHTML = ""; // 清空页面
+      document.write("");  // 页面不渲染
+    } else {
+      document.write(`
+        <h1>锦程科技</h1>
+        <p>欢迎访问</p>
+        <img src="my_image.jpg" alt="图片">
+      `);
     }
   </script>
-
-  <h1>锦程科技</h1>
-  <p>欢迎访问</p>
-  <img src="my_image.jpg" alt="图片">
 </body>
 </html>
+
 
 
