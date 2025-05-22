@@ -4,25 +4,35 @@
   <meta charset="UTF-8">
   <title>锦程科技</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 100px; background: #f0f0f0; }
-    img { width: 80%; max-width: 400px; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: #f0f0f0;
+    }
+    img {
+      width: 80%;
+      max-width: 400px;
+    }
   </style>
 </head>
 <body>
   <script>
     const password = prompt("请输入访问密码：");
-    const correct = "123456";  // 设置你的密码
-    if (password !== correct) {
-      alert("密码错误，无法访问！");
-      document.write("");  // 页面不渲染
-    } else {
+    const correct = "123456";
+
+    if (password === correct) {
       document.write(`
         <h1>锦程科技</h1>
         <p>欢迎访问</p>
         <img src="my_image.jpg" alt="图片">
       `);
+    } else {
+      alert("密码错误，无法访问！");
+      document.write(""); // 页面内容置空
     }
   </script>
 </body>
 </html>
+
 
